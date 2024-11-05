@@ -86,7 +86,7 @@ export default function Home(): ReactElement {
 
             <motion.div className={styles.textBox} variants={itemVariants}>
               <h3>Provide the sommelier the information</h3>
-              <p>Secondly, using the data from the previous step, pass it to the AI. The AI will incorporate this data into a specialized set of instructions (referred to as a 'prompt') to determine the best possible wine selection.</p>
+              <p>Secondly, using the data from the previous step, pass it to the AI. The AI will incorporate this data into a specialized set of instructions (referred to as a &apos;prompt&apos;) to determine the best possible wine selection.</p>
             </motion.div>
 
             <motion.div className={styles.textBox} variants={itemVariants}>
