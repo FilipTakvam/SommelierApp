@@ -1,0 +1,57 @@
+$circleWidth-large: 16rem;
+$circleWidth-small: 14rem;
+
+.circle {
+    width: $circleWidth-large;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.wineGlass {
+    position: relative;
+    height: calc(#{$circleWidth-large} * 2.5);
+    width: $circleWidth-large;
+}
+
+.top {
+    border: 2px solid white;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+
+.middle {
+    position: absolute;
+    transform: translateY(50%);
+}
+
+.line {
+    width: 2px;
+    height: $circleWidth-large;
+    background-color: white;
+    position: absolute;
+    left: calc(#{$circleWidth-large} / 2);
+    transform: translateY(100%);
+}
+
+.bottom {
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 776px) {
+    .circle {
+        width: $circleWidth-small;
+    }
+
+    .wineGlass {
+        height: calc(#{$circleWidth-small} * 2.5);
+        width: $circleWidth-small;
+    }
+
+    .line {
+        height: $circleWidth-small;
+        left: calc(#{$circleWidth-small} / 2);
+    }
+}

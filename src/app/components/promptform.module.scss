@@ -1,0 +1,94 @@
+.prompt {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.promptWindow {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputLabel {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-left: 0.3rem;
+  display: block;
+}
+
+.textarea {
+  resize: none;
+  background-color: rgb(39, 39, 42);
+  box-shadow: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  font: inherit;
+  font-weight: 300;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+
+  &:focus {
+    border: 1px solid white;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.preferences, .preferencesSelectors {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 996px) {
+
+  .promptWindow {
+    width: 75%;
+  }
+
+  .preferences {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promptWindow {
+    width: 85%;
+  }
+
+  .inputLabel, .textarea {
+    font-size: 0.9rem;
+  }
+
+  .prompt {
+    height: 100%;
+  }
+}

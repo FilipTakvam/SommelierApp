@@ -1,0 +1,60 @@
+.wineRecommendationContainer {
+    height: 100dvh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+
+.wineRecommendation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+    gap: 0.5rem;
+}
+
+.wineGlass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 776px) {
+    .wineRecommendationContainer {
+        height: max-content;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .wineRecommendation {
+        padding: 2rem;
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .buttonGroup {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    .wineRecommendation {
+        p {
+            text-align: left;
+        }
+    }
+}
