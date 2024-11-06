@@ -11,7 +11,7 @@
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.5em;
 }
 
 .inputLabel {
@@ -20,8 +20,8 @@
   text-transform: uppercase;
   font-weight: 300;
   display: block;
-  margin-bottom: 0.5rem;
-  padding-left: 0.3rem;
+  margin-bottom: 0.5em;
+  padding-left: 0.3em;
   display: block;
 }
 
@@ -37,7 +37,7 @@
   color: white;
   font: inherit;
   font-weight: 300;
-  padding: 0.5rem;
+  padding: 0.5em;
   font-size: 1.1rem;
 
   &:focus {
@@ -63,7 +63,7 @@
 .preferences, .preferencesSelectors {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 1em;
   align-items: center;
 }
 
