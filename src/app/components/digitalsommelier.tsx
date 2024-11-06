@@ -23,6 +23,10 @@ function DigitalSommelier() {
     const [wineRecommendation, setWineRecommendation] = useState<wineRecommendationProps | null>(null);
 
     const handleWineRecommendation = (recommendedWine: wineRecommendationProps) => {
+        if (recommendedWine.region.includes(recommendedWine.country)) {
+            recommendedWine.region = recommendedWine.region.replace(recommendedWine.country, "");
+            recommendedWine.region = recommendedWine.region.replace(", ", "");
+        }
         setWineRecommendation(recommendedWine);
     }
 
