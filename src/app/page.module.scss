@@ -5,11 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 5em;
     background:radial-gradient(90% 100% at 50% 0, #240006 0%, #000000 75%);
 
     p {
-        padding: 0 1rem;
+        padding: 0 1em;
     }
 }
 
@@ -18,7 +18,7 @@
     line-height: 1;
     text-transform: capitalize;
     letter-spacing: 0.15rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2em;
     white-space: pre-wrap;
 }
 
@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center center;
-    margin-top: 10rem;
+    margin-top: 10em;
     background:radial-gradient(80% 98% at 100% 50%, #240006 0%, #000000 75%);
 }
 
@@ -38,13 +38,13 @@
     align-items: flex-start;
     justify-content: center;
     width: 80%;
-    gap: 3rem;
+    gap: 3em;
 }
 
 .textBox {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.4em;
     position: relative;
 
     &::before {
@@ -53,7 +53,7 @@
         background-color: rgb(39, 39, 42);
         height: 100%;
         width: 2px;
-        left: -0.8rem;
+        left: -0.8em;
         top: 0;
     }
 
@@ -76,8 +76,8 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        gap: 5rem;
-        margin-bottom: 10rem;
+        gap: 5em;
+        margin-bottom: 10em;
     }
 
     .aboutText {

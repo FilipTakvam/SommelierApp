@@ -12,7 +12,7 @@
   flex-direction: row;
   position: relative;
   white-space: nowrap;
-  gap: 2rem;
+  gap: 2em;
 
   h1 {
     display: inline-block;
@@ -21,12 +21,12 @@
 
 @media screen and (max-width: 992px) {
   .slide {
-    gap: 1.5rem;
+    gap: 1.5em;
   }
 }
 
 @media screen and (max-width: 768px) {
   .slide {
-    gap: 1rem;
+    gap: 1em;
   }
 }

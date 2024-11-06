@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 4rem;
-    gap: 0.5rem;
+    padding-left: 4em;
+    gap: 0.5em;
 }
 
 .wineGlass {
@@ -22,7 +22,8 @@
 
 .buttonGroup {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5em;
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 776px) {
@@ -30,12 +31,12 @@
         height: max-content;
         display: flex;
         flex-direction: column-reverse;
-        gap: 3rem;
+        gap: 3em;
         justify-content: center;
     }
 
     .wineRecommendation {
-        padding: 2rem;
+        padding: 2em;
 
         h1, h3 {
             text-align: center;
